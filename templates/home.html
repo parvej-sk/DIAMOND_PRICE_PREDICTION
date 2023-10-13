@@ -1,0 +1,135 @@
+<html>
+<body>
+    <div class="login">
+       <h5>Diamond Price Prediction</h5>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Diamond Price Prediction</legend>
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">carat</label>
+            <input type="number" name="carat" id ="carat"><br><br>
+        </div>
+
+
+        <div class="mb-3">
+            <label class="form-label">cut</label>
+            <select class="form-control" name="cut" placeholder="Enter you cut" required>
+                <option class="placeholder" selected disabled value="">cut</option>
+                <option value="Ideal">
+                    Ideal
+                </option>
+                <option value="Premium">
+                    Premium
+                </option>
+                <option value="Very Good">
+                    Very Good
+                </option>
+                <option value="Good">
+                    Good
+                </option>
+                <option value="Fair">
+                    Fair
+                </option>
+            </select>
+        </div><br><br>
+
+
+
+
+        <div class="mb-3">
+            <label class="form-label">color</label>
+            <select class="form-control" name="color" placeholder="Enter color" required>
+                <option class="placeholder" selected disabled value="">color</option>
+                <option value="G">
+                    G
+                </option>
+                <option value="E">
+                    E
+                </option>
+                <option value="F">
+                    F
+                </option>
+                <option value="H">
+                    H
+                </option>
+                <option value="D">
+                    D
+                </option>
+                <option value="I">
+                    I
+                </option>
+                <option value="J">
+                    J
+                </option>
+            </select>
+        </div><br><br>
+
+
+        <div class="mb-3">
+            <label class="form-label">clarity</label>
+            <select class="form-control" name="clarity" placeholder="Enter clarity" required>
+                <option class="placeholder" selected disabled value="">clarity</option>
+                <option value="SI1">
+                    SI1
+                </option>
+                <option value="VS2">
+                    VS2
+                </option>
+                <option value="VS1">
+                    VS1
+                </option>
+                <option value="SI2">
+                    SI2
+                </option>
+                <option value="VVS2">
+                    VVS2
+                </option>
+                <option value="VVS1">
+                    VVS1
+                </option>
+                <option value="IF">
+                    IF
+                </option>
+                <option value="I1">
+                    I1
+                </option>
+            </select>
+        </div><br>
+
+        <div class="mb-3">
+            <label class="form-label">depth</label>
+            <input type="number" name="depth" id ="depth">
+        </div><br>
+
+        <div class="mb-3">
+            <label class="form-label">table</label>
+            <input type="number" name="table" id ="table">
+        </div><br>
+
+        <div class="mb-3">
+            <label class="form-label">x</label>
+            <input type="number" name="x" id ="x">
+        </div><br>
+
+        <div class="mb-3">
+            <label class="form-label">y</label>
+            <input type="number" name="y" id ="y">
+        </div><br>
+
+        <div class="mb-3">
+            <label class="form-label">z</label>
+            <input type="number" name="z" id ="z">
+        </div><br>
+
+
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict Dimond Price" required />
+        </div><br>
+    </form>
+    <h2>
+       THE  prediction is {{results}}
+    </h2>
+   <body>
+</html>
