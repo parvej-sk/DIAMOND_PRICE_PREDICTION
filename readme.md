@@ -31,16 +31,13 @@ To run the project locally, please ensure you have the following dependencies in
 3. install Requirements file
 4. Run app.py
 
+upcomig.....CICD PIPELINE CODE with MLflow, Docker, Kubernate with github Action workflow.
+
 
 ## Results
 
 The results of the diamond price prediction are evaluated based on various metrics such as mean absolute error (MAE), root mean squared error (RMSE), and R-squared score. These metrics provide insights into the performance of the model and how well it predicts diamond prices.
 
-
-
-
-
-![Alt text](pred.png)
 
 
 
