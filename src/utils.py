@@ -49,6 +49,7 @@ def evaluate_model(X_train,y_train,X_test,y_test,models):
 
 
 def load_object(file_path):
+    #load and save the file
     try:
         with open(file_path, "rb") as file_obj:
             return pickle.load(file_obj)
