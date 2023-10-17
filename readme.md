@@ -31,7 +31,7 @@ To run the project locally, please ensure you have the following dependencies in
 3. install Requirements file
 4. Run app.py
 
-upcomig.....CICD PIPELINE CODE with MLflow, Docker, Kubernate with github Action workflow.
+upcomig..... MLflow, Kubernate with github Action workflow.
 
 
 ## Results
